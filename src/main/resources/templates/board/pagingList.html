@@ -2,17 +2,17 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>boardList</title>
-    <link rel="stylesheet" th:href="@{/css/boardList.css}">
+    <title>pagingList</title>
+    <link rel="stylesheet" th:href="@{/css/pagingList.css}">
 </head>
 <body>
 <div th:replace="~{fragments/common/header :: headerFragment}"></div>
-<div class="boardList">
-    <div class="boardList-con">
+<div class="pagingList">
+    <div class="pagingList-con">
         <table>
             <thead>
             <tr>
-                <th colspan="5">게시글목록</th>
+                <th colspan="5">페이지리스트</th>
             </tr>
             <tr>
                 <th>아이디</th>
@@ -32,6 +32,8 @@
             </tr>
             </tbody>
         </table>
+
+        </div>
     </div>
 </div>
 </body>

@@ -1,0 +1,41 @@
+@import url(/css/common/reset.css);
+@import url(/css/common/header.css);
+.pagingList{
+  width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.pagingList .pagingList-con{
+  flex-basis: 1400px;
+    padding:20px;
+    box-sizing:border-box;
+     background-color:#ebf9f8;
+}
+
+.pagingList .pagingList-con table{
+    width:100%;
+}
+
+table, td ,th{
+ border-collapse: collapse;
+ border:1px solid #555555;
+ text-align:center;
+}
+
+.pagingList .pagingList-con table thead tr:nth-child(1) th{
+      background-color:#555555;
+      color:#ffffff;
+      font-size:20px;
+      padding:10px 0;
+}
+
+.pagingList .pagingList-con table thead tr:nth-child(2) th{
+      background-color:#00a9cc;
+      color:#ffffff;
+      padding:8px 0;
+}
+
+.pagingList .pagingList-con table tbody tr td{
+      padding:5px 0;
+}

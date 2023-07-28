@@ -3,18 +3,18 @@
   display:flex;
   justify-content:center;
   padding:20px  0 10px;
-  background-color:#1c4b91
+  background-color:#BAB4FA;
 }
 .header .nav{
   display:flex;
   justify-content:space-between;
   flex-basis: 1400px;
- background-color:#1c4b91ee;
+ background-color:#6C7FAD;
 }
 .header .nav h1.logo{
   flex-basis: 120px;
   line-height:60px;
-  background-color:#000000;
+  background-color:#D1DFFF;
   color:#fff;
   text-align:center;
 }
@@ -29,13 +29,13 @@
 }
 .header .nav .gnb ul li{
     line-height:40px;
-      background-color:#000000;
+      background-color:#6C7FAD;
       color:#fff;
 }
 .header .nav .gnb ul li a{
   box-sizing:border-box;
    padding:0 10px ;
-     background-color:#000000;
+     background-color:#295EAE;
      color:#fff;
 }
 

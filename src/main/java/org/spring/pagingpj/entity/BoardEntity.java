@@ -2,6 +2,7 @@ package org.spring.pagingpj.entity;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.spring.pagingpj.dto.BoardDto;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -36,5 +37,16 @@ public class BoardEntity {
   @Column(insertable = false)
   private LocalDateTime updateTime;
 
+
+  //Dto -> Entity
+    public static BoardEntity toBoardEntity(BoardDto boardDto) {
+
+      BoardEntity boardEntity=new BoardEntity();
+      boardEntity.setId(boardDto.getId());
+      boardEntity.setBoardWriter(boardDto.getBoardWriter());
+      boardEntity.setBoardTitle(boardDto.getBoardTitle());
+      boardEntity.setBoardContent(boardDto.getBoardContent());
+      return boardEntity;
+    }
 
 }
